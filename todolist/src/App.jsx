@@ -1,17 +1,25 @@
 import AppTodo from "./components/Apptodo"
 import Todoadd from "./components/Todoadd"
-import TodoItem from "./components/Todoitems"
-import TodoItem2 from "./components/Todoitems2"
+import Todocont from "./components/Todocont";
 import "./App.css";
 function App() {
 
+ const Todocant = [
+  {
+    name: "Buy anythings",
+    duedate: "2026",
+  },
+  {
+    name: "Learn Quant",
+    duedate: "2029",
+  },
+ ];
   return (
     <>
        <center>
       <AppTodo/>
       <Todoadd/>
-      <TodoItem/>
-      <TodoItem2/>
+      <Todocont Todocant={Todocant}/>
        </center>
     </>
   )
